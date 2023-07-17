@@ -22,7 +22,7 @@ namespace OEWebApplicationApp.Models
                 {
                     SqlCommand command = connection.CreateCommand();
                     command.CommandType = CommandType.StoredProcedure;
-                    command.CommandText = "spr_CGYGetRequesterOEStatus";
+                    command.CommandText = "spr_EDMGetRequesterOEStatus";
                     command.Parameters.AddWithValue("@RequestedBy", username);
                     command.Parameters.AddWithValue("@Status", id);
                 SqlDataAdapter sqlda = new SqlDataAdapter(command);
@@ -72,7 +72,7 @@ namespace OEWebApplicationApp.Models
             {
                 SqlCommand command = connection.CreateCommand();
                 command.CommandType = CommandType.StoredProcedure;
-                command.CommandText = "spr_CGYGetRequestOEById";
+                command.CommandText = "spr_EDMGetRequestOEById";
                 command.Parameters.AddWithValue("@RequestId", id);
                 SqlDataAdapter sqlda = new SqlDataAdapter(command);
                 DataTable dtOE = new DataTable();
@@ -125,7 +125,7 @@ namespace OEWebApplicationApp.Models
             {
                 SqlCommand command = connection.CreateCommand();
                 command.CommandType = CommandType.StoredProcedure;
-                command.CommandText = "spr_CGYUpdateOE";
+                command.CommandText = "spr_EDMUpdateOE";
 
                 command.Parameters.AddWithValue("@RequestId", request.RequestId);
                 if (request.Request != null) { command.Parameters.AddWithValue("@Request", request.Request); } else { command.Parameters.AddWithValue("@Request", DBNull.Value); };
@@ -156,7 +156,7 @@ namespace OEWebApplicationApp.Models
             {
                 SqlCommand command = connection.CreateCommand();
                 command.CommandType = CommandType.StoredProcedure;
-                command.CommandText = "spr_CGYDeleteOE";
+                command.CommandText = "spr_EDMDeleteOE";
                 command.Parameters.AddWithValue("@RequestID", id);
                 command.Parameters.Add("@OutputMessage", SqlDbType.VarChar, 50).Direction = ParameterDirection.Output;
 
@@ -178,7 +178,7 @@ namespace OEWebApplicationApp.Models
             {
                 SqlCommand command = connection.CreateCommand();
                 command.CommandType = CommandType.StoredProcedure;
-                command.CommandText = "spr_CGYInsertOE";
+                command.CommandText = "spr_EDMInsertOE";
                 command.Parameters.AddWithValue("@Vendor", request.Vendor);
                 command.Parameters.AddWithValue("@VendorName", request.VendorName);
                 command.Parameters.AddWithValue("@RequestedBy", username);
@@ -267,7 +267,7 @@ namespace OEWebApplicationApp.Models
             {
                 SqlCommand command = connection.CreateCommand();
                 command.CommandType = CommandType.StoredProcedure;
-                command.CommandText = "spr_CGYGetApproverOEStatus";
+                command.CommandText = "spr_EDMGetApproverOEStatus";
                 command.Parameters.AddWithValue("@RequestedBy", username);
                 command.Parameters.AddWithValue("@Status", id);
                 SqlDataAdapter sqlda = new SqlDataAdapter(command);
@@ -317,7 +317,7 @@ namespace OEWebApplicationApp.Models
             {
                 SqlCommand command = connection.CreateCommand();
                 command.CommandType = CommandType.StoredProcedure;
-                command.CommandText = "spr_CGYGetRequestOEById";
+                command.CommandText = "spr_EDMGetRequestOEById";
                 command.Parameters.AddWithValue("@RequestId", id);
                 SqlDataAdapter sqlda = new SqlDataAdapter(command);
                 DataTable dtOE = new DataTable();
@@ -370,7 +370,7 @@ namespace OEWebApplicationApp.Models
             {
                 SqlCommand command = connection.CreateCommand();
                 command.CommandType = CommandType.StoredProcedure;
-                command.CommandText = "spr_CGYApproveOE";
+                command.CommandText = "spr_EDMApproveOE";
 
                 command.Parameters.AddWithValue("@RequestId", request.RequestId);
                 if (request.Request != null) { command.Parameters.AddWithValue("@Request", request.Request); } else { command.Parameters.AddWithValue("@Request", DBNull.Value); };
@@ -407,7 +407,7 @@ namespace OEWebApplicationApp.Models
             {
                 SqlCommand command = connection.CreateCommand();
                 command.CommandType = CommandType.StoredProcedure;
-                command.CommandText = "spr_CGYAutoApproveOE";
+                command.CommandText = "spr_EDMAutoApproveOE";
 
                 command.Parameters.AddWithValue("@RequestId", id);         
                 command.Parameters.AddWithValue("@Status", approvedStatus);
@@ -436,7 +436,7 @@ namespace OEWebApplicationApp.Models
             {
                 SqlCommand command = connection.CreateCommand();
                 command.CommandType = CommandType.StoredProcedure;
-                command.CommandText = "spr_CGYLastEntry";
+                command.CommandText = "spr_EDMLastEntry";
                 command.Parameters.AddWithValue("@RequestedBy", username);
                 command.Parameters.Add("@OutputMessage", SqlDbType.VarChar, 50).Direction = ParameterDirection.Output;
                 connection.Open();

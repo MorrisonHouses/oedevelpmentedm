@@ -11343,11 +11343,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\OEWebApplicationApp.csproj",
-      "projectName": "OEWebApplicationApp",
-      "projectPath": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\OEWebApplicationApp.csproj",
+      "projectUniqueName": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelpmentedm\\OEWebApplicationApp\\OEWebApplicationApp\\OEWebEDMApplicationApp.csproj",
+      "projectName": "OEWebEDMApplicationApp",
+      "projectPath": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelpmentedm\\OEWebApplicationApp\\OEWebApplicationApp\\OEWebEDMApplicationApp.csproj",
       "packagesPath": "C:\\Users\\edoucett\\.nuget\\packages\\",
-      "outputPath": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\obj\\",
+      "outputPath": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelpmentedm\\OEWebApplicationApp\\OEWebApplicationApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

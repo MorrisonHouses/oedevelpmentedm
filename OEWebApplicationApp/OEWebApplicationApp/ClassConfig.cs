@@ -16,7 +16,7 @@ namespace OEWebApplicationApp
     public class ClassConfig
     {
 
-        private readonly string configAddress = "C:/Users/edoucett/Desktop/ConfigOEWebApp.txt";
+        private readonly string configAddress = "C:/Users/edoucett/Desktop/ConfigOEEDMWebApp.txt";
         /// <summary>
         /// pulls the current user name
         /// </summary>
