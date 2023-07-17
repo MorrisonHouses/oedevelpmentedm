@@ -6,7 +6,7 @@
 
 <div class="container-fluid boxShadow">
     <div class="row">
-        <div class="col-4 "><h3>Approve OE Request</h3></div>
+        <div class="col-4 "><h3>Operating Expense Approval</h3></div>
         <a asp-area="" asp-controller="Home" asp-action="Index"><h4>Back to Home Page</h4></a>
         <div class="col-4"></div>
         <div class="col-4 justify-content-end"></div>
@@ -25,7 +25,8 @@
     <hr />
 }
 <div class="container-fluid boxShadow">
-    <div class="row justify-content-center">
+    <div class="row justify-content-start">
+        <div class="col-1 text-center button text-black">Filters: </div>
         <div class="col-1 text-center button"><a asp-controller="Approval" asp-action="Index" asp-route-id="All" id="All">View All</a></div>
         <div class="col-1 text-center button"><a asp-controller="Approval" asp-action="Index" asp-route-id="Approved" id="Approved">Approved</a></div>
         <div class="col-1 text-center button"><a asp-controller="Approval" asp-action="Index" asp-route-id="notApproved">Not Approved</a></div>
@@ -166,7 +167,7 @@
                 {
                     <a asp-controller="Approval" asp-action="Edit" asp-route-id="@item.RequestId" class="text-danger">Approve</a>
                     <a asp-controller="Approval" asp-action="Details" asp-route-id="@item.RequestId" class="text-black">Details</a>
-                    <a asp-controller="Image" asp-action="Index" asp-route-id="@item.RequestId" asp-route-page="approval" class="text-black ">Images</a>
+                        <a asp-controller="Image" asp-action="Index" asp-route-id="@item.RequestId" asp-route-page="approval" class="text-black ">Attachment</a>
                     <a asp-controller="Request" asp-action="Print"
                         asp-route-page="approval"
                         asp-route-Requestid="@item.RequestId"
@@ -178,12 +179,12 @@
                         asp-route-taxAmt="@item.Gstamount"
                         asp-route-totalAmt="@item.TotalAmount"
                         asp-route-vendorname="@item.VendorName"
-                           class="text-black ">OEPrint</a>
+                           class="text-black ">Print</a>
                 }
                 else
                 {
                     <a asp-controller="Approval" asp-action="Details" asp-route-id="@item.RequestId" class="text-black">Details</a>
-                    <a asp-controller="Image" asp-action="Index" asp-route-id="@item.RequestId" asp-route-page="approval" class="text-black  ">Images</a>
+                        <a asp-controller="Image" asp-action="Index" asp-route-id="@item.RequestId" asp-route-page="approval" class="text-black  ">Attachment</a>
                     <a asp-controller="Request" asp-action="Print"
                         asp-route-page="approval"
                         asp-route-Requestid="@item.RequestId"
@@ -195,7 +196,7 @@
                         asp-route-taxAmt="@item.Gstamount"
                         asp-route-totalAmt="@item.TotalAmount"
                         asp-route-vendorName="@item.VendorName"
-                           class="text-black ">OEPrint</a>
+                           class="text-black ">Print</a>
                 }
             </td>
         </tr>

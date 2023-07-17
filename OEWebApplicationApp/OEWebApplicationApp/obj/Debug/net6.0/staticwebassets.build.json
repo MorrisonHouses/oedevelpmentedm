@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ODadryuTvX6PRdJV5Yz8xAqyYVZQnY44f61NA2yUdzA=",
+  "Hash": "BfyAaPS/ntWvHQ79PPJQMhB4x1nj/LZXA3pphrp04kQ=",
   "Source": "OEWebEDMApplicationApp",
   "BasePath": "_content/OEWebEDMApplicationApp",
   "Mode": "Default",
@@ -117,23 +117,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Files\\12768CGY13072023024143.pdf"
-    },
-    {
-      "Identity": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelpmentedm\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\Files\\24646CGY17072023100534.pdf",
-      "SourceId": "OEWebEDMApplicationApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelpmentedm\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\",
-      "BasePath": "_content/OEWebEDMApplicationApp",
-      "RelativePath": "Files/24646CGY17072023100534.pdf",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Files\\24646CGY17072023100534.pdf"
     },
     {
       "Identity": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelpmentedm\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\Images\\MH_Logo_BLACK.png",
