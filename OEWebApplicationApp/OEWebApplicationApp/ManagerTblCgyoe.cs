@@ -9,6 +9,7 @@ namespace OEWebApplicationApp.Models
         private ClassFunctions function = new();
         private ClassConfig configclass = new();
 
+        //REQUEST SECTION=======================================================================================================================
         /*GET REQUEST=================================================================================================================*/
         public List<TblCgyoeModel> GetViewOERequest(string id)
             {
