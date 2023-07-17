@@ -1,0 +1,45 @@
+﻿@model OEWebApplicationApp.Models.TblCgyoeModel
+
+@{
+    ViewData["Title"] = "Reject";
+}
+<div class="container-fluid boxShadow">
+    <div class="row">
+        <div class="col-sm-4"><h3>Reject OE</h3></div>
+        <a asp-area="" asp-controller="Approval" asp-action="Index" asp-route-id="notApproved"><h4>Back to Approve List</h4></a>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4"><p></p></div>
+    </div>
+</div>
+<hr />
+<div class="container-fluid ">
+<div class="row">
+    <div class="col-md-3"></div>
+        <div class="col-md-6 boxShadow">
+            <form asp-action="Reject" asp-antiforgery="true">
+                <div class="form-group-approve ">
+                    <label asp-for="RequestId" class="control-label"></label>
+                    <input asp-for="RequestId" class="form-control" value="@ViewData["Id"]" readonly />
+                    <span asp-validation-for="RequestId" class="text-danger"></span>
+                </div>
+                <div class="form-group-approve ">
+                    <label asp-for="RequestedBy" class="control-label"></label>
+                    <input asp-for="RequestedBy" class="form-control" value="@ViewData["RequestedBy"]" readonly />
+                    <span asp-validation-for="RequestedBy" class="text-danger"></span>
+                </div>
+                <div class="form-group ">
+                    <label asp-for="RejectReason" class="control-label"></label>
+                    <input asp-for="RejectReason" class="form-control bg-yellow" value="Rejected" />
+                    <span asp-validation-for="RejectReason" class="text-danger"></span>
+                    <h5 class="text-danger">-- 150 characters, no special characters. --</h5>
+                </div>
+                <div class="form-group boxShadow m-2">
+                    <input asp-controller="Approval" type="submit" value="Submit" class="btn btn-primary m-2" />
+                    <a asp-controller="Approval" asp-action="Edit" 
+                    asp-route-id="@ViewData["Id"]" 
+                    asp-route-RequestedBy="@ViewData["RequestedBy"]"
+                    class="text-black ">Back</a>
+                </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,88 @@
+﻿@model IEnumerable<OEWebApplicationApp.Models.ImageModel>
+
+@{
+    ViewData["Title"] = "Images";
+}
+
+<div class="container-fluid boxShadow">
+    <div class="row">
+        <div class="col-4 "><h3>Images for @ViewData["MyRequestId"]</h3></div>
+        <a asp-action="Create" asp-route-id="@ViewData["MyRequestId"]" asp-route-page="@ViewData["Page"]" ;><h4>Upload an Image</h4></a>
+        @if (@ViewData["Page"].ToString() != "request")
+        {
+            <a class="" asp-action="Index" asp-controller="Approval"><h4>Back to Approvals</h4></a>
+        }else
+        {
+            <a class="" asp-action="Index" asp-controller="Request" ><h4>Back to Requests</h4></a>
+        }
+
+        <div class="col-4 text-center"></div>
+        <div class="col-4 "> </div>
+    </div>
+</div>
+<hr />
+@if (TempData["Info Message"] != null)
+{
+    <div class="container d-flex justify-content-center bg-info boxShadow">
+        <div class="row">
+            <div class="" id="top">
+                <h2 class="text-black"><strong>@TempData["Info Message"]</strong></h2>
+            </div>
+        </div>
+    </div>
+    <hr />
+}
+<table class="table table-striped table-bordered table-hover boxShadow">
+    <thead>
+        <tr>
+            <th class ="text-center">
+                @Html.DisplayNameFor(model => model.RequestId)
+            </th>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.FileName)
+            </th>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.InsertDate)
+            </th>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.Location)
+            </th>
+@*            <th class="text-center">
+                @Html.DisplayNameFor(model => model.Path)
+            </th>*@
+            <th></th>
+            <th></th>
+            <th class="text-center">Preview</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => item.RequestId)
+            </td>
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => item.FileName)
+            </td>
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => item.InsertDate)
+            </td>
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => item.Location)
+            </td >
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => item.Path)
+            </td>
+                <td class="text-center">
+                    <a asp-action="Delete" asp-route-id="@item.FileName" asp-route-page="@ViewData["Page"]">Delete</a>
+                </td>
+                <td class="text-center">
+                    <a href="~/Files/@(item.FileName)" target="_blank">View File</a>
+                </td>
+            <td>
+                    <iframe src="~/Files/@(item.FileName)" class="w-100 mh-100 embed-responsive-item modal-lg" width="1000"></iframe>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

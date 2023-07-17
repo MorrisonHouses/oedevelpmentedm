@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "OE Print";
+}
+<div class="container-fluid boxShadow">
+    <div class="row">
+        @if (@ViewData["Page"].ToString() != "request")
+        {
+            <a class="" asp-action="Index" asp-controller="Approval"><h4>Back to Approvals</h4></a>
+        }
+        else
+        {
+            <a class="" asp-action="Index" asp-controller="Request"><h4>Back to Requests</h4></a>
+        }
+
+        <div class="col-4 text-center"></div>
+        <div class="col-4 "> </div>
+    </div>
+</div>
+<hr />
+@if (TempData["Info Message"] != null)
+{
+    <div class="container-fluid d-flex justify-content-center bg-info boxShadow">
+        <div class="row">
+            <div class="" id="top">
+                <h2 class="text-black"><strong>@TempData["Info Message"]</strong></h2>
+            </div>
+        </div>
+    </div>
+    <hr />
+}
+<iframe type="application/pdf" src="~/Report/MorrisonOEPO.pdf" class="w-100" allowFullScreen style="height:800px"></iframe>

@@ -1,0 +1,57 @@
+﻿@model OEWebApplicationApp.Models.ImageModel
+
+@{
+    ViewData["Title"] = "UploadImage";
+}
+
+<div class="container-fluid boxShadow">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4 text-center">
+            <h4 class="">Upload Image for Operating Expense @ViewData["MyRequestId"]</h4>
+            <a asp-action="Index" asp-route-id="@ViewData["MyRequestId"]" asp-route-page="@ViewData["Page"]"><h4>Back to Images</h4></a>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>
+<hr />
+<div class="container ">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4 boxShadow">
+            <form asp-action="Create" asp-controller="Image" method="post" enctype="multipart/form-data" asp-antiforgery="true">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="RequestId" class="control-label"></label>
+                    <input asp-for="RequestId" value="@ViewData["MyRequestId"]" class="form-control" readonly/>
+                    <span asp-validation-for="RequestId" class="text-danger"></span>
+                </div>
+   @*             <div class="form-group">
+                    <label asp-for="InsertDate" class="control-label"></label>
+                    <input asp-for="InsertDate" class="form-control" />
+                    <span asp-validation-for="InsertDate" class="text-danger"></span>
+                </div>*@
+                <div class="form-group">
+                    <label asp-for="Location" class="control-label"></label>
+                    <input asp-for="Location" Value="CGY"class="form-control" readonly/>
+                    <span asp-validation-for="Location" class="text-danger"></span>
+                </div>
+@*                <div class="form-group">
+                    <label asp-for="Path" class="control-label"></label>
+                    <input asp-for="Path" class="form-control" />
+                    <span asp-validation-for="Path" class="text-danger"></span>
+                </div>*@
+                <div class="form-group">
+                    <label asp-for="File" class="control-label"></label>
+                    <input asp-for="File" class="form-control bg-yellow" accept="application/pdf" required />
+                    <span asp-validation-for="File" class="text-danger"></span>
+                </div>
+                <div class="form-group m-2">
+                    <input type="submit" value="Create" class="btn btn-primary" asp-route-id="@ViewData["MyRequestId"]"  asp-route-page="@ViewData["Page"]" />
+                </div>
+            </form>
+        </div>
+        </div>
+    </div>
+
+<hr />

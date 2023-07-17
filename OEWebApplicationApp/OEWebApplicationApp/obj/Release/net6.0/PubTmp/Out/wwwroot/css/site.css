@@ -1,0 +1,100 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+:root {
+    --clr_text_white: #FFFFFF;
+    --clr_text_black: #000000;
+}
+.text-white {
+    color: var(--clr_text_white);
+}
+.text-black {
+    color: var(--clr_text_black);
+}
+.label.white{
+    color: white;
+}
+.label.black {
+    color: black;
+}
+.nav-link:hover{
+    background: gray;
+    border-radius: 25px;
+    animation: ease-in-out 100ms;
+}
+.nav-link{
+    margin: 3px;
+}
+
+.button {
+    display: block;
+    width: 115px;
+    height: auto;
+/*    background: #4E9CAF;*/
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    margin:3px;
+}
+.form-group-create {
+    margin: 0 auto 0.1rem auto;
+    display: inline-flex;
+    align-items: start;
+    flex-wrap: wrap;
+    background-color: white;
+}
+.form-group-approve {
+    margin: 0 auto 0.6rem auto;
+    display: inline-flex;
+    align-items: start;
+    flex-wrap: wrap;
+    background-color: white;
+}
+hr {
+    border: 3px solid ;
+    background: linear-gradient(90deg, rgba(0,14,22,1) 1%, rgba(0,102,159,1) 48%, rgba(0,41,62,1) 92%);
+}
+.boxShadow {
+    box-shadow: 2px 2px 5px #00293E;
+    background-color: white;
+}
+.boxHover:hover {
+    background-color: #e6ffff;
+}
+html, body {
+    background-color: #F1F1F1;
+}
+container {
+    background-color: white;
+}
+.corners{
+    border-radius: 25px;
+}
+footer {
+    background: linear-gradient(90deg, rgba(255,239,239,1) 0%, rgba(212,212,212,1) 99%);
+}
+header {
+/*    background: linear-gradient(90deg, rgba(0,41,62,1) 0%, rgba(255,255,255,1) 99%);*/
+    background: linear-gradient(90deg, rgba(255,255,255,1)25%, rgba(0,41,62,1) 99%);
+}
+.bg-yellow{
+    background-color: lightyellow;
+}

@@ -1,0 +1,127 @@
+﻿@model OEWebApplicationApp.Models.TblCgyoeModel
+
+@{
+    ViewData["Title"] = "Request Edit";
+}
+<div class="container-fluid boxShadow">
+    <div class="row">
+        <div class="col-4 "><h3>Edit Request </h3></div>
+        <a asp-action="Create"><h4>Create New Operating Expense</h4></a>
+        <a asp-area="" asp-controller="Request" asp-action="Index"><h4>Back to Request List</h4></a>
+        <div class="col-4 "></div>
+        <div class="col-4">
+            <p>
+
+            </p>
+        </div>
+    </div>
+</div>
+@if (TempData["Info Message"] != null)
+{
+    <hr />
+    <div class="container d-flex justify-content-center">
+        <div class="row">
+            <div class="" id="top">
+                <h2 class="bg-info"><strong>@TempData["Info Message"]</strong></h2>
+            </div>
+        </div>
+    </div>
+    <hr />
+}
+<hr />
+<div class="container-fluid ">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 boxShadow">
+            <form asp-action="Edit" asp-antiforgery="true">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="RequestId" />
+                <div class="form-group">
+                    <label asp-for="RequestId" class="control-label"></label>
+                    <input asp-for="RequestId" class="form-control" readonly />
+                    <span asp-validation-for="RequestId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Vendor" class="control-label"></label>
+                    <input asp-for="Vendor" class="form-control" readonly />
+                    <span asp-validation-for="Vendor" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="VendorName" class="control-label"></label>
+                    <input asp-for="VendorName" class="form-control" readonly />
+                    <span asp-validation-for="VendorName" class="text-danger"></span>
+                </div>
+    @*            <div class="form-group">
+                    <label asp-for="RequestedBy" class="control-label"></label>
+                    <input asp-for="RequestedBy" class="form-control" readonly />
+                    <span asp-validation-for="RequestedBy" class="text-danger"></span>
+                </div>*@
+                <div class="form-group">
+                    <label asp-for="Glaccount" class="control-label"></label>
+                    <input asp-for="Glaccount" class="form-control" readonly />
+                    <span asp-validation-for="Glaccount" class="text-danger"></span>
+                </div>
+    @*            <div class="form-group">
+                    <label asp-for="AutoApproveThreshold" class="control-label"></label>
+                    <input asp-for="AutoApproveThreshold" class="form-control" readonly />
+                    <span asp-validation-for="AutoApproveThreshold" class="text-danger"></span>
+                </div>*@
+                <div class="form-group">
+                    <label asp-for="Amount" class="control-label"></label>
+                    <input asp-for="Amount" class="form-control" readonly />
+                    <span asp-validation-for="Amount" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Gstamount" class="control-label"></label>
+                    <input asp-for="Gstamount" class="form-control" readonly />
+                    <span asp-validation-for="Gstamount" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="TotalAmount" class="control-label"></label>
+                    <input asp-for="TotalAmount" class="form-control" readonly />
+                    <span asp-validation-for="TotalAmount" class="text-danger"></span>
+                </div>
+@*                <div class="form-group">
+                    <label asp-for="Gstincluded" class="control-label"></label>
+                    <input asp-for="Gstincluded" class="form-control" readonly />
+                    <span asp-validation-for="Gstincluded" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Budgeted" class="control-label"></label>
+                    <input asp-for="Budgeted" class="form-control" readonly />
+                    <span asp-validation-for="Budgeted" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="AutoApproved" class="control-label"></label>
+                    <input asp-for="AutoApproved" class="form-control" readonly />
+                    <span asp-validation-for="AutoApproved" class="text-danger"></span>
+                </div>*@
+                <div class="form-group">
+                    <label asp-for="Request" class="control-label"></label>
+                    <input asp-for="Request" class="form-control bg-yellow" />
+                    <span asp-validation-for="Request" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PurchaseDate" class="control-label"></label>
+                    <input asp-for="PurchaseDate" class="form-control " readonly />
+                    <span asp-validation-for="PurchaseDate" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Reason" class="control-label"></label>
+                    <input asp-for="Reason" class="form-control bg-yellow" />
+                    <span asp-validation-for="Reason" class="text-danger"></span>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="form-group col-3 align-content-end">
+                            <input type="submit" value="Update" class=" btn btn-success m-2"  />
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
+<hr />

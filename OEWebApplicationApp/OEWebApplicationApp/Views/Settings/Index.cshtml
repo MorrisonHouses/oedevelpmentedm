@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewData["Title"] = "Settings";
+}
+<div class="container boxShadow">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4 text-center">
+            <h4 class="">Current Settings Page</h4>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>
+<hr />
+
+<div class="container-fluid d-inline-flex boxShadow p-2 m-2">
+    <div class="text-left col-12">
+        <h5 class="border">User:  @ViewBag.UserName</h5>
+        <h5 class="border">User Address: @ViewBag.Address</h5>
+        <h5 class="border">GST:  @ViewBag.GST</h5>
+        <h5 class="border">CONFIG LOCATION: @ViewBag.CONFLOC</h5>
+        <h5 class="border">EXPORT LOCATION:  @ViewBag.EXPLOC</h5>
+        <h5 class="border">MORSQL:  @ViewBag.MorSQL</h5>
+        <h5 class="border">VMORTL:  @ViewBag.Vmortl</h5>
+        <h5 class="border">EMAIL SMTP:  @ViewBag.SMTP</h5>
+        <h5 class="border">EMAIL PORT:  @ViewBag.PORT</h5>
+        <h5 class="border">EMAIL FROM:  @ViewBag.FROM</h5>
+    </div>
+</div>
+

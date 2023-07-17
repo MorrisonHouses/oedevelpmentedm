@@ -1,0 +1,301 @@
+{
+  "Files": [
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\OEWebApplicationApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\OEWebApplicationApp.bundle.scp.css"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\Files\\12649CGY13062023114555.pdf",
+      "PackagePath": "staticwebassets\\Files\\12649CGY13062023114555.pdf"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\Files\\12649CGY14062023080944.pdf",
+      "PackagePath": "staticwebassets\\Files\\12649CGY14062023080944.pdf"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\Files\\12652CGY13062023013723.pdf",
+      "PackagePath": "staticwebassets\\Files\\12652CGY13062023013723.pdf"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\Files\\12652CGY13062023014154.pdf",
+      "PackagePath": "staticwebassets\\Files\\12652CGY13062023014154.pdf"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\Files\\12652CGY13062023114532.pdf",
+      "PackagePath": "staticwebassets\\Files\\12652CGY13062023114532.pdf"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\Files\\12652CGY26062023094821.pdf",
+      "PackagePath": "staticwebassets\\Files\\12652CGY26062023094821.pdf"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\Images\\MH_Logo_BLACK.png",
+      "PackagePath": "staticwebassets\\Images\\MH_Logo_BLACK.png"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\Report\\MorrisonOEPO.docx",
+      "PackagePath": "staticwebassets\\Report\\MorrisonOEPO.docx"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\Report\\MorrisonOEPO.pdf",
+      "PackagePath": "staticwebassets\\Report\\MorrisonOEPO.pdf"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelopment\\OEWebApplicationApp\\OEWebApplicationApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.OEWebApplicationApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.build.OEWebApplicationApp.props",
+      "PackagePath": "build\\OEWebApplicationApp.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.OEWebApplicationApp.props",
+      "PackagePath": "buildMultiTargeting\\OEWebApplicationApp.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildTransitive.OEWebApplicationApp.props",
+      "PackagePath": "buildTransitive\\OEWebApplicationApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
