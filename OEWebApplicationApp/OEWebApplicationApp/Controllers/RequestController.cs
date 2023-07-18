@@ -128,7 +128,7 @@ namespace OEWebApplicationApp.Controllers
                 ViewBag.ttlamt = tblCgyoeModel.CalculateTotalValue();
                 ViewBag.newAmt = tblCgyoeModel.CalculateAmount();
                 //ViewBag.newthreshold = viewGLaccountManager.GetThreshold(tblCgyoeModel.Glaccount);
-                ViewBag.newthreshold = ((double)viewGLaccountManager.GetThreshold(tblCgyoeModel.Glaccount) - (double)tblCgyoeModel.CalculateTotalValue()) ;
+                ViewBag.newthreshold = ((double)viewGLaccountManager.GetThreshold(tblCgyoeModel.Glaccount) - (double)tblCgyoeModel.CalculateTotalValue());
             }
             else
             {

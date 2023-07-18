@@ -7,7 +7,7 @@
 <div class="container-fluid boxShadow">
     <div class="row">
         <div class="col-4 "><h3>Images for @ViewData["MyRequestId"]</h3></div>
-        <a asp-action="Create" asp-route-id="@ViewData["MyRequestId"]" asp-route-page="@ViewData["Page"]" ;><h4>Upload an Image</h4></a>
+        <a asp-action="Create" asp-route-id="@ViewData["MyRequestId"]" asp-route-page="@ViewData["Page"]" ;><h4>Upload an Attachment</h4></a>
         @if (@ViewData["Page"].ToString() != "request")
         {
             <a class="" asp-action="Index" asp-controller="Approval"><h4>Back to Approvals</h4></a>

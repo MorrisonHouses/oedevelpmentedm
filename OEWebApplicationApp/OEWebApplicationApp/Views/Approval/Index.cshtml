@@ -152,7 +152,7 @@
 @*                <td class="text-center">
                 @Html.DisplayFor(modelItem => item.ApprovedDate)
             </td>*@
-                <td class="text-center">
+                <td class="text-center fw-bold">
                 @Html.DisplayFor(modelItem => item.Status)
             </td>
 @*            <td>
@@ -165,10 +165,10 @@
 
                 @if (item.Status != "Approved")
                 {
-                    <a asp-controller="Approval" asp-action="Edit" asp-route-id="@item.RequestId" class="text-danger">Approve</a>
+                    <a asp-controller="Approval" asp-action="Edit" asp-route-id="@item.RequestId" class="text-danger fw-bold ">Approve</a>
                     <a asp-controller="Approval" asp-action="Details" asp-route-id="@item.RequestId" class="text-black">Details</a>
                         <a asp-controller="Image" asp-action="Index" asp-route-id="@item.RequestId" asp-route-page="approval" class="text-black ">Attachment</a>
-                    <a asp-controller="Request" asp-action="Print"
+@*                    <a asp-controller="Request" asp-action="Print"
                         asp-route-page="approval"
                         asp-route-Requestid="@item.RequestId"
                         asp-route-vendor="@item.Vendor"
@@ -179,7 +179,7 @@
                         asp-route-taxAmt="@item.Gstamount"
                         asp-route-totalAmt="@item.TotalAmount"
                         asp-route-vendorname="@item.VendorName"
-                           class="text-black ">Print</a>
+                           class="text-black ">Print</a>*@
                 }
                 else
                 {

@@ -38,7 +38,7 @@
         <div class="col-1 text-center button"><a asp-controller="Request" asp-action="Index" asp-route-id="All" id="All">View All</a></div>
         <div class="col-1 text-center button"><a asp-controller="Request" asp-action="Index" asp-route-id="Approved" id="Approved">Approved</a></div>
         <div class="col-1 text-center button"><a asp-controller="Request" asp-action="Index" asp-route-id="notApproved">Not Approved</a></div>
-        <div class="col-1 text-center button"><a asp-controller="Request" asp-action="Index" asp-route-id="Declined">Declined</a></div>
+@*        <div class="col-1 text-center button"><a asp-controller="Request" asp-action="Index" asp-route-id="Declined">Declined</a></div>*@
     </div>
 </div>
 <div class="container-fluid boxShadow">
@@ -159,7 +159,7 @@
     @*            <td>
                     @Html.DisplayFor(modelItem => item.ApprovedDate)
                 </td>*@
-                    <td class="text-danger text-center">
+                    <td class="text-danger text-center fw-bold">
                     @Html.DisplayFor(modelItem => item.Status )
                         @ViewBag.ImageCount
                 </td>
@@ -180,8 +180,8 @@
                         <a asp-controller="Request" asp-action="Edit" asp-route-id="@item.RequestId" class="text-black">Edit</a>
                         <a asp-controller="Request" asp-action="Details" asp-route-id="@item.RequestId" class="text-black">Details</a>
                         <a asp-controller="Request" asp-action="Delete" asp-route-id="@item.RequestId" class="text-black ">Delete</a>
-                        <a asp-controller="Image" asp-action="Index" asp-route-id="@item.RequestId" asp-route-page="request" class="text-black ">Attachment</a>
-                        <a asp-controller="Request" asp-action="Print"
+                        <a asp-controller="Image" asp-action="Index" asp-route-id="@item.RequestId" asp-route-page="request" class="text-black fw-bold">Attachment</a>
+@*                        <a asp-controller="Request" asp-action="Print"
                             asp-route-page="request"
                             asp-route-Requestid="@item.RequestId"
                             asp-route-vendor="@item.Vendor"
@@ -192,12 +192,12 @@
                             asp-route-taxAmt="@item.Gstamount"
                             asp-route-totalAmt="@item.TotalAmount"
                             asp-route-vendorname="@item.VendorName"
-                               class="text-black ">Print</a>
+                               class="text-black ">Print</a>*@
                     }
                     else
                     {
                         <a asp-controller="Request" asp-action="Details" asp-route-id="@item.RequestId" class="text-black">Details</a>
-                            <a asp-controller="Image" asp-action="Index" asp-route-id="@item.RequestId" asp-route-page="request" class="text-black ">Attachment</a>
+                            <a asp-controller="Image" asp-action="Index" asp-route-id="@item.RequestId" asp-route-page="request" class="text-black fw-bold ">Attachment</a>
                         <a asp-controller="Request" asp-action="Print"
                             asp-route-page="request"
                             asp-route-Requestid="@item.RequestId" 

@@ -6,7 +6,7 @@
 
 <div class="container-fluid boxShadow">
     <div class="row">
-        <div class="col-sm-4"><h3>Approve OE @Model.RequestId</h3></div>
+        <div class="col-sm-4"><h3>Approve Operating Expense @Model.RequestId</h3></div>
         <a asp-area="" asp-controller="Approval" asp-action="Index" asp-route-id="notApproved"><h4>Back to Approve List</h4></a>
         <div class="col-sm-4"></div>   
         <div class="col-sm-4">
@@ -92,14 +92,14 @@
                     <input asp-for="AutoApproved" class="form-control" readonly />
                 <span asp-validation-for="AutoApproved" class="text-danger"></span>
             </div>*@
-                <div class="form-group boxShadow m-2">
-                    <label asp-for="Request" class="control-label"></label>
-                    <input asp-for="Request" class="form-control bg-yellow" />
+                <div class="form-group  m-2">
+                    <label asp-for="Request" class="control-label" ></label>
+                    <input asp-for="Request" class="form-control " readonly />
                     <span asp-validation-for="Request" class="text-danger"></span>
                 </div>
-                <div class="form-group boxShadow m-2">
+                <div class="form-group  m-2">
                     <label asp-for="Reason" class="control-label"></label>
-                    <input asp-for="Reason" class="form-control bg-yellow" />
+                    <input asp-for="Reason" class="form-control " readonly />
                     <span asp-validation-for="Reason" class="text-danger"></span>
                 </div>
                 <div class=" m-2">
@@ -126,8 +126,8 @@
             </div>*@
                 <div class=" m-2">
                     <div class="form-group-approve">
-                        <label asp-for="Status" class="control-label"></label>
-                        <input asp-for="Status" value="Approved" class="form-control text-danger" readonly/>
+                        <label asp-for="Status" class="control-label" hidden></label>
+                        <input asp-for="Status" value="Approved" class="form-control text-danger" hidden/>
                         <span asp-validation-for="Status" class="text-danger"></span>
                     </div>
                 </div>
@@ -136,9 +136,9 @@
                 <input asp-for="Timestamp" class="form-control" />
                 <span asp-validation-for="Timestamp" class="text-danger"></span>
             </div>*@
-                <div class="form-group boxShadow m-2">
+                <div class="form-group  m-2">
                     <input asp-controller="Approval" type="submit" value="Approve" class="btn btn-primary m-2" />
-                    <a asp-controller="Approval" asp-action="Reject" asp-route-id="@Model.RequestId" asp-route-requestedby="@Model.RequestedBy" class="text-black ">REJECT</a>
+                    <a asp-controller="Approval" asp-action="Reject" asp-route-id="@Model.RequestId" asp-route-requestedby="@Model.RequestedBy" class="text-danger fw-bold ">REJECT</a>
                 </div>
         </form>
     </div>

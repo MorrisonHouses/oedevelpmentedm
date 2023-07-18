@@ -22,7 +22,7 @@ namespace OEWebApplicationApp.Controllers
                 var OElist = ManagerImage.GetImages(id);
                 if (!OElist.Any())
                 {
-                    TempData["Info Message"] = "-- Message Center: There are no images uploaded for document " + id + " --";
+                    TempData["Info Message"] = "-- Message Center: There are no attachments uploaded for document " + id + " --";
                     OElist = ManagerImage.GetImages(id);
                     ViewData["Page"] = page;
                     ViewData["MyRequestId"] = id;

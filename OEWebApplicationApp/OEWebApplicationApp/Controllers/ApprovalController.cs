@@ -108,26 +108,27 @@ namespace OEWebApplicationApp.Controllers
                         //notification message
                         TempData["Info Message"] = "--Message Center: Approval Notification Sent to " + ViewData["SendToName"] + " --";
                         //email system
+                        //TODO CHANGE EMAIL NAME TO APPROVER
                         string email = "evan.doucett@morrisonhomes.ca";
                         string body = "Dear Recipient, \n \n Please be advised that your OE "+ TblCgyoeModel.RequestId + " has been approved. ";
                         string subject = "-- OE Approval Notification.";
                         function.SendEmail(email, body, subject);
                         //redirection
-                        return RedirectToAction("Index");
+                        return RedirectToAction("Index", new { id = "notApproved" });
                     }
                     else
                     {
                         TempData["Info Message"] = "--Message Center: Approval was NOT Success--";
-                        return RedirectToAction("Index");
+                        return RedirectToAction("Index", new { id = "notApproved" });
                     }
                 }
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", new { id = "notApproved" });
             }
             catch (Exception ex)
             {
 
                 TempData["Info Message"] = ex.Message;
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", new { id = "notApproved" });
             }
         }
 
@@ -173,7 +174,8 @@ namespace OEWebApplicationApp.Controllers
                 string subject = "-- OE Rejection Notification.";
                 TempData["Info Message"] = "--Message Center: Approval Rejection Sent to " + email1 + " --";
                 function.SendEmail(email, body, subject);
-                return RedirectToAction(nameof(Index));
+                RejectDelete(id, tblCgyoeModel);
+                return RedirectToAction("Index", new { id = "notApproved" });
             }
             catch
             {
@@ -181,6 +183,24 @@ namespace OEWebApplicationApp.Controllers
                 return View();
             }
         }
+        public ActionResult RejectDelete(int id, TblCgyoeModel tblCgyoe)
+        {
+            ManagerImage managerImage = new ManagerImage();
+            try
+            {
+                //remove oe request from db
+                string result = tblCgyoeManager.Delete(id);
+                //remove oe scanned images from db and file
+                managerImage.DeleteAllImages(id, tblCgyoe);
+                return RedirectToAction("Index", new { id = "notApproved" });
+            }
+            catch (Exception ex)
+            {
+                TempData["Info Message"] = ex.Message;
+                return View();
+            }
+
+        }//Delete
 
     }//CLASS
 }//NAMESPACE
