@@ -6,26 +6,41 @@ namespace OEWebApplicationApp.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        //private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        //public HomeController(ILogger<HomeController> logger)
+        //{
+        //    _logger = logger;
+        //}
+        public string NewUserName()
         {
-            _logger = logger;
-        }
+            string value;
+            value = HttpContext.User.Identity.Name.Remove(0, 14);
+            //value = "cpitre";
 
+            return value;
+        }
         public IActionResult Index()
         {
+            //string userName = HttpContext.User.Identity.Name;
+            string userName = NewUserName();
+            //userName = userName.Remove(0, 14);
             /*calls username*/
             ManagerViewGLaccount viewGLaccountManager = new ManagerViewGLaccount();
             ClassFunctions function = new();
             ClassConfig configclass = new();
-            ViewBag.UserName = configclass.username();
+            ManagerViewGLaccount managerViewGLaccount = new();
+            //ViewBag.UserName = configclass.username();
             ViewBag.DateTime = function.dateTime();
+            ViewBag.UserName = userName;
+            ViewBag.ApproverBool = viewGLaccountManager.GetApprovalBool(userName);
+            ViewBag.RequesterBool = viewGLaccountManager.GetRequestBool(userName);
             try
             {
-                ViewBag.UserName = configclass.username();
-                ViewBag.ApproverBool = viewGLaccountManager.GetApprovalBool();
-                ViewBag.RequesterBool = viewGLaccountManager.GetRequestBool();
+                //ViewBag.UserName = configclass.username();
+                //ViewBag.UserName = userName;
+                ViewBag.ApproverBool = viewGLaccountManager.GetApprovalBool(userName);
+                ViewBag.RequesterBool = viewGLaccountManager.GetRequestBool(userName);
             }
             catch (Exception ex)
             {

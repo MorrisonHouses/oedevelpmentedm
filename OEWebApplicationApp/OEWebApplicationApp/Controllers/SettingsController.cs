@@ -5,13 +5,21 @@ namespace OEWebApplicationApp.Controllers
 {
     public class SettingsController : Controller
     {
+        public string NewUserName()
+        {
+            string value;
+            value = HttpContext.User.Identity.Name.Remove(0, 14);
+            //value = "cpitre";
+
+            return value;
+        }
         public IActionResult Index()
         {
             /*calls username, GST, CONFIG FILE LOCATION, USER ADDRESS*/
             ClassFunctions function = new();
             ClassConfig configclass = new();
             ViewBag.Address = configclass.Address();
-            ViewBag.UserName = configclass.username();
+            ViewBag.UserName = NewUserName();
             ViewBag.GST = configclass.ConfigGST();
             ViewBag.CONFLOC = configclass.ConfigLocation();
             ViewBag.EXPLOC = configclass.ExportLocation();
@@ -25,5 +33,6 @@ namespace OEWebApplicationApp.Controllers
 
             return View();
         }
-    }
-}
+
+    }//class
+}//namespace

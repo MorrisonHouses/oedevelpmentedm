@@ -6,6 +6,14 @@ namespace OEWebApplicationApp.Controllers
 {
     public class RequestController : Controller
     {
+        public string NewUserName()
+        {
+            string value;
+            value = HttpContext.User.Identity.Name.Remove(0, 14);
+            //value = "cpitre";
+
+            return value;
+        }
         //instace of helper classes======================================================
         private ClassFunctions function = new();
         private ClassConfig configclass = new();
@@ -20,24 +28,26 @@ namespace OEWebApplicationApp.Controllers
         {
             ClassFunctions function = new();
             ClassConfig configclass = new();
-            ViewBag.UserName = configclass.username();
+            //ViewBag.UserName = configclass.username();
+            ViewBag.UserName = NewUserName();
             ViewBag.DateTime = function.dateTime();
 
             try
             {
-                var OElist = tblCgyoeManager.GetViewOERequest(id);
+                var OElist = tblCgyoeManager.GetViewOERequest(id, NewUserName());
                 if (!OElist.Any())
                 {
                     TempData["Info Message"] = "-- Message Center: You do not have any request --";
-                    OElist = tblCgyoeManager.GetViewOERequest(id).OrderByDescending(x => x.RequestId).ToList();
+                    OElist = tblCgyoeManager.GetViewOERequest(id, NewUserName()).OrderByDescending(x => x.RequestId).ToList();
                     return View(OElist);
                 }
                 else
                 {
-                    OElist = tblCgyoeManager.GetViewOERequest(id).OrderByDescending(x => x.RequestId).ToList();
+                    OElist = tblCgyoeManager.GetViewOERequest(id, NewUserName()).OrderByDescending(x => x.RequestId).ToList();
                     return View(OElist);
                 }
-            }catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 TempData["Info Message"] = ex.Message;
                 return View();
@@ -51,11 +61,12 @@ namespace OEWebApplicationApp.Controllers
         {
             ClassFunctions function = new();
             ClassConfig configclass = new();
-            ViewBag.UserName = configclass.username();
+            //ViewBag.UserName = configclass.username();
+            ViewBag.UserName = NewUserName();
             ViewBag.DateTime = function.dateTime();
             try
             {
-                var OElist = tblCgyoeManager.GetViewOERequestById(id);
+                var OElist = tblCgyoeManager.GetViewOERequestById(id, NewUserName());
                 return View(OElist);
             }
             catch (Exception ex)
@@ -72,8 +83,10 @@ namespace OEWebApplicationApp.Controllers
         //[Route("CreateItem")]
         public ActionResult Create()
         {
+            string userName = NewUserName();
             //values from file==================================================
-            ViewBag.UserName = configclass.username();
+            //ViewBag.UserName = configclass.username();
+            ViewBag.UserName = userName;
             ViewBag.DateTime = function.dateTime();
             ViewBag.GstValue = configclass.ConfigGST();
             //dropdown list==================================================
@@ -84,15 +97,16 @@ namespace OEWebApplicationApp.Controllers
             //total var======================================================
             ViewBag.ttlamt = 0;
             ViewBag.amount = 0;
+            ViewBag.newthreshold = 0;
             ViewBag.gstamt = 0;
             //select database lists==========================================
             TblCgyoeModel tblCgyoeModel = new TblCgyoeModel();
-            string ? name = tblCgyoeModel.GetVendorName();
-            string ? threashold = tblCgyoeModel.GetGlAccount();
-            ViewBag.vendors = apmMasterVendorManager.GetViewVendor().ToList();
-            ViewBag.glAccounts = viewGLaccountManager.GetAllGlAccounts();
-            ViewBag.vendName = apmMasterVendorManager.GetViewVendor().ToList().Where(x => x.Vendor == name);
-            ViewBag.approverGK = viewGLaccountManager.GetAllGlAccounts().ToList().Where(x => x.AccountCustomField == threashold);
+            string? name = tblCgyoeModel.GetVendorName();
+            string? threashold = tblCgyoeModel.GetGlAccount();
+            ViewBag.vendors = apmMasterVendorManager.GetViewVendor(NewUserName()).ToList();
+            ViewBag.glAccounts = viewGLaccountManager.GetAllGlAccounts(userName);
+            ViewBag.vendName = apmMasterVendorManager.GetViewVendor(NewUserName()).ToList().Where(x => x.Vendor == name);
+            ViewBag.approverGK = viewGLaccountManager.GetAllGlAccounts(userName).ToList().Where(x => x.AccountCustomField == threashold);
 
 
             return View();
@@ -105,7 +119,8 @@ namespace OEWebApplicationApp.Controllers
         public IActionResult Createcalc(TblCgyoeModel tblCgyoeModel)
         {
             //values from file==================================================
-            ViewBag.UserName = configclass.username();
+            //ViewBag.UserName = configclass.username();
+            ViewBag.UserName = NewUserName();
             ViewBag.DateTime = function.dateTime();
             ViewBag.GstValue = configclass.ConfigGST();
             //dropdown list=====================================================
@@ -113,30 +128,29 @@ namespace OEWebApplicationApp.Controllers
             ViewBag.autoApproved = tblCgyoeManager.AutoApproveList();
             ViewBag.status = tblCgyoeManager.StatusList();
             ViewBag.gstInc = tblCgyoeManager.GstList();
-            ViewBag.newthreshold = "False";
-            string ? name = tblCgyoeModel.GetVendorName();
-            string ? threashold = tblCgyoeModel.GetGlAccount();
+            string userName = NewUserName();
+            string? name = tblCgyoeModel.GetVendorName();
+            string? threashold = tblCgyoeModel.GetGlAccount();
 
             if (ModelState.IsValid)
             {
-                ViewBag.vendors = apmMasterVendorManager.GetViewVendor().ToList();
-                ViewBag.glAccounts = viewGLaccountManager.GetAllGlAccounts();
-                ViewBag.vendName = apmMasterVendorManager.GetViewVendor().ToList().Where(x => x.Vendor == name);
-                ViewBag.threashold = viewGLaccountManager.GetAllGlAccounts().ToList().Where(x => x.AccountCustomField == threashold);
-                ViewBag.approverGK = viewGLaccountManager.GetAllGlAccounts().ToList().Where(x => x.AccountCustomField == threashold);
+                ViewBag.vendors = apmMasterVendorManager.GetViewVendor(NewUserName()).ToList();
+                ViewBag.glAccounts = viewGLaccountManager.GetAllGlAccounts(userName);
+                ViewBag.vendName = apmMasterVendorManager.GetViewVendor(NewUserName()).ToList().Where(x => x.Vendor == name);
+                ViewBag.threashold = viewGLaccountManager.GetAllGlAccounts(userName).ToList().Where(x => x.AccountCustomField == threashold);
+                ViewBag.approverGK = viewGLaccountManager.GetAllGlAccounts(userName).ToList().Where(x => x.AccountCustomField == threashold);
                 ViewBag.gstamt = tblCgyoeModel.CalculateGST();
                 ViewBag.ttlamt = tblCgyoeModel.CalculateTotalValue();
                 ViewBag.newAmt = tblCgyoeModel.CalculateAmount();
-                //ViewBag.newthreshold = viewGLaccountManager.GetThreshold(tblCgyoeModel.Glaccount);
-                ViewBag.newthreshold = ((double)viewGLaccountManager.GetThreshold(tblCgyoeModel.Glaccount) - (double)tblCgyoeModel.CalculateTotalValue());
+                ViewBag.newthreshold = ((double)viewGLaccountManager.GetThreshold(tblCgyoeModel.Glaccount, userName) - (double)tblCgyoeModel.CalculateTotalValue());
             }
             else
             {
                 ViewBag.ttlamt = 0;
                 ViewBag.gstamt = 0;
                 ViewBag.newAmt = 0;
-                ViewBag.vendors = apmMasterVendorManager.GetViewVendor().ToList();
-                ViewBag.glAccounts = viewGLaccountManager.GetAllGlAccounts();
+                ViewBag.vendors = apmMasterVendorManager.GetViewVendor(NewUserName()).ToList();
+                ViewBag.glAccounts = viewGLaccountManager.GetAllGlAccounts(userName);
                 ViewBag.vendName = "";
                 ViewBag.approverGK = "";
                 ViewBag.newthreshold = 0;
@@ -155,25 +169,28 @@ namespace OEWebApplicationApp.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    bool IsUpdated = tblCgyoeManager.createProduct(tblCgyoe);
+                    bool IsUpdated = tblCgyoeManager.createProduct(tblCgyoe, NewUserName());
                     if (IsUpdated)
                     {
                         ViewData["SendToName"] = tblCgyoe.ApprovedBy + "@morrisonhomes.ca";
-                        TempData["Info Message"] = "--Message Center: Creation Successfully send to " + ViewData["SendToName"] +" --";
-                        //TODO CHANGE EMAIL NAME TO APPROVER
+                        TempData["Info Message"] = "--Message Center: Creation Successfully send to " + ViewData["SendToName"] + " --";
+                        //TODO: change email to approver
+                        string email1 = tblCgyoe.ApprovedBy + "@morrisonhomes.ca";
                         string email = "evan.doucett@morrisonhomes.ca";
                         string body = "Dear Recipient, \n \n Please be advised that you have an OE approval. ";
                         string subject = "-- OE Request Notification.";
-                        function.SendEmail(email, body, subject);
-                        return RedirectToAction("Index");
+                        function.SendEmail(email1, body, subject);
+                        string lastEntry = tblCgyoeManager.GetLastEntryByUser(NewUserName());
+                        return RedirectToAction("Create", "Image", new { id = lastEntry, page = "request" });
+                        //return RedirectToAction("Index", new { id = "notApproved" });
                     }
                     else
                     {
                         TempData["Info Message"] = "--Message Center: Creation NOT Successful--";
-                        return RedirectToAction("Index");
+                        return RedirectToAction("Index", new { id = "notApproved" });
                     }
                 }
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", new { id = "notApproved" });
             }
             catch (Exception ex)
             {
@@ -190,9 +207,10 @@ namespace OEWebApplicationApp.Controllers
         {
             ClassFunctions function = new();
             ClassConfig configclass = new();
-            ViewBag.UserName = configclass.username();
+            //ViewBag.UserName = configclass.username();
+            ViewBag.UserName = NewUserName();
             ViewBag.DateTime = function.dateTime();
-            var OElist = tblCgyoeManager.GetViewOERequestById(id).FirstOrDefault();
+            var OElist = tblCgyoeManager.GetViewOERequestById(id, NewUserName()).FirstOrDefault();
             return View(OElist);
         }//Edit
 
@@ -201,27 +219,28 @@ namespace OEWebApplicationApp.Controllers
         [ActionName("Edit")]
         public ActionResult Edit(int id, TblCgyoeModel tblCgyoeModel)
         {
+            string username1 = NewUserName();
             try
             {
-                    if (ModelState.IsValid)
+                if (ModelState.IsValid)
+                {
+                    bool IsUpdated = tblCgyoeManager.UpdateRequest(id, tblCgyoeModel, username1);
+                    if (IsUpdated)
                     {
-                        bool IsUpdated = tblCgyoeManager.UpdateRequest(id, tblCgyoeModel);
-                        if (IsUpdated)
-                        {
-                            TempData["Info Message"] = "--Message Center: Edit successful--";
-                            return RedirectToAction("Index");
-                        }
-                        else
-                        {
-                            TempData["Info Message"] = "--Message Center: Edit was NOT successful, remove all special characters--";
-                            return RedirectToAction("Edit");
-                        }
+                        TempData["Info Message"] = "--Message Center: Edit successful--";
+                        return RedirectToAction("Index");
                     }
                     else
                     {
+                        TempData["Info Message"] = "--Message Center: Edit was NOT successful, remove all special characters--";
+                        return RedirectToAction("Edit");
+                    }
+                }
+                else
+                {
                     TempData["Info Message"] = "--Message Center: Edit was NOT successful, remove all special characters--";
                     return RedirectToAction("Edit");
-                    }
+                }
                 //return RedirectToAction("Index", new { id = "notApproved" });
             }
             catch (Exception ex)
@@ -240,9 +259,10 @@ namespace OEWebApplicationApp.Controllers
             ClassConfig configclass = new();
 
             TblCgyoeModel model = new TblCgyoeModel();
-            ViewBag.UserName = configclass.username();
+            //ViewBag.UserName = configclass.username();
+            ViewBag.UserName = NewUserName();
             ViewBag.DateTime = function.dateTime();
-            var OElist = tblCgyoeManager.GetViewOERequestById(id).FirstOrDefault();
+            var OElist = tblCgyoeManager.GetViewOERequestById(id, NewUserName()).FirstOrDefault();
             return View(OElist);
         }//Delete
 
@@ -254,7 +274,7 @@ namespace OEWebApplicationApp.Controllers
             try
             {
                 //remove oe request from db
-                string result = tblCgyoeManager.Delete(id);
+                string result = tblCgyoeManager.Delete(id, NewUserName());
                 //remove oe scanned images from db and file
                 managerImage.DeleteAllImages(id, tblCgyoe);
                 TempData["Info Message"] = "--Message Center: Deleting of OE and Images was Successful--";
@@ -287,7 +307,7 @@ namespace OEWebApplicationApp.Controllers
                 function.CreateWordDocument(RequestId, VendorId, PurchaseDate, GlAccount, Request, Amount, GstAmt, TotalAmt, vendorName);
                 return View();
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 TempData["Info Message"] = ex.Message;
                 return View();
@@ -305,12 +325,12 @@ namespace OEWebApplicationApp.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    bool IsUpdated = tblCgyoeManager.createProduct(tblCgyoe);
+                    bool IsUpdated = tblCgyoeManager.createProduct(tblCgyoe, NewUserName());
                     if (IsUpdated)
                     {
                         //approval request
-                        string idLastEntry = tblCgyoeManager.GetLastEntryByUser();
-                        tblCgyoeManager.AutoApproveRequest(Convert.ToInt32(idLastEntry));
+                        string idLastEntry = tblCgyoeManager.GetLastEntryByUser(NewUserName());
+                        tblCgyoeManager.AutoApproveRequest(Convert.ToInt32(idLastEntry), NewUserName());
                         //table values
                         int requestId = Convert.ToInt32(idLastEntry);
                         string? reason = tblCgyoe.Reason;
@@ -322,7 +342,9 @@ namespace OEWebApplicationApp.Controllers
                         function.WriteToFile(requestId, vendor, reason, request, gst, totalAmount);
                         //message to user
                         TempData["Info Message"] = "--Message Center: Approval has been approved --";
-                        return RedirectToAction("Index");
+                        string lastEntry = tblCgyoeManager.GetLastEntryByUser(NewUserName());
+                        return RedirectToAction("Create", "Image", new { id = lastEntry, page = "request" });
+                        //return RedirectToAction("Index");
                     }
                     else
                     {

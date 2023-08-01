@@ -5,6 +5,14 @@ namespace OEWebApplicationApp.Controllers
 {
     public class ImageController : Controller
     {
+        public string NewUserName()
+        {
+            string value;
+            value = HttpContext.User.Identity.Name.Remove(0, 14);
+              //value = "cpitre";
+
+            return value;
+        }
         private ClassFunctions function = new();
         private ClassConfig configclass = new();
         private ManagerImage ManagerImage = new();
@@ -15,14 +23,15 @@ namespace OEWebApplicationApp.Controllers
 
             ClassFunctions function = new();
             ClassConfig configclass = new();
-            ViewBag.UserName = configclass.username();
+            //ViewBag.UserName = configclass.username();
+            ViewBag.UserName = NewUserName();
             ViewBag.DateTime = function.dateTime();
             try
             {
                 var OElist = ManagerImage.GetImages(id);
                 if (!OElist.Any())
                 {
-                    TempData["Info Message"] = "-- Message Center: There are no attachments uploaded for document " + id + " --";
+                    TempData["Info Message"] = "-- Message Center: There are no Attachments uploaded for document " + id + " --";
                     OElist = ManagerImage.GetImages(id);
                     ViewData["Page"] = page;
                     ViewData["MyRequestId"] = id;
