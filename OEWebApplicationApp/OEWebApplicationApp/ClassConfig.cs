@@ -16,18 +16,18 @@ namespace OEWebApplicationApp
     public class ClassConfig
     {
 
-        private readonly string configAddress = "C:/Users/edoucett/Desktop/ConfigOEEDMWebApp.txt";
+        private readonly string configAddress = "C:/inetpub/wwwroot/ConfigOEEDMWebApp.txt";
         /// <summary>
         /// pulls the current user name
         /// </summary>
         /// <returns>user name </returns>
-        public string username()
-        {
-            string userName = System.Security.Principal.WindowsIdentity.GetCurrent().Name.Trim();
-            string name = userName.Remove(0, 14);
-            name = "cpitre";
-            return name;
-        }//username
+        //public string username()
+        //{
+        //    string userName = System.Security.Principal.WindowsIdentity.GetCurrent().Name.Trim();
+        //    string name = userName.Remove(0, 14);
+        //    name = "cpitre";
+        //    return name;
+        //}//username
 
         // TODO: gnicholls name error
         // TODO: cpitre / yclement

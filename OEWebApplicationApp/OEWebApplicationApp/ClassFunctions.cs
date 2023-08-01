@@ -45,7 +45,7 @@ namespace OEWebApplicationApp
             {
                 SqlCommand command = connection.CreateCommand();
                 command.CommandType = CommandType.StoredProcedure;
-                command.CommandText = "spr_CGYOECSVExport";
+                command.CommandText = "spr_EDMOECSVExport";
                 command.Parameters.AddWithValue("@RequestId", id);
                 command.Parameters.Add("@OutputMessage", SqlDbType.VarChar, 100).Direction = ParameterDirection.Output;
                 command.Parameters.Add("@OutputMessage2", SqlDbType.VarChar, 100).Direction = ParameterDirection.Output;
@@ -61,12 +61,12 @@ namespace OEWebApplicationApp
             string line2 = result2;
             string docPath = location;
             //string docPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-            using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath, "FPO_Import.jcc"),true))
+            using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath, "FPO_ImportEdmonton.jcc"),true))
             {
                 //foreach (string line in lines) outputFile.WriteLine(line);
                 outputFile.WriteLine(lines);
             }
-            using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath, "FPO_Import.jcc"), true))
+            using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath, "FPO_ImportEdmonton.jcc"), true))
             {
                 //foreach (string line in lines) outputFile.WriteLine(line);
                 outputFile.WriteLine(line2);
