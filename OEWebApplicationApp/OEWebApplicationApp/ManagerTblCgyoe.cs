@@ -11,12 +11,13 @@ namespace OEWebApplicationApp.Models
 
         //REQUEST SECTION=======================================================================================================================
         /*GET REQUEST=================================================================================================================*/
-        public List<TblCgyoeModel> GetViewOERequest(string id)
+        public List<TblCgyoeModel> GetViewOERequest(string id, string username1)
             {
                 ClassConfig classConfig = new ClassConfig();
                 List<TblCgyoeModel> listOfOERequest = new List<TblCgyoeModel>();
-                string username = configclass.username();
-                if (id == null) { id = "All"; };
+            //string username = configclass.username();
+            string username = username1;
+            if (id == null) { id = "All"; };
                 string config = configclass.MorSQLConnections();
             //string config = @"Data Source=MORSQL;Initial Catalog=MorrisonHomes;User Id=bpm_user;Password=resu_mpb1; TrustServerCertificate=True";
                 using (SqlConnection connection = new SqlConnection(config))
@@ -63,11 +64,12 @@ namespace OEWebApplicationApp.Models
         }//GetViewOERequest
 
         /*GET REQUEST BY ID===========================================================================================================================*/
-        public List<TblCgyoeModel> GetViewOERequestById(int id)
+        public List<TblCgyoeModel> GetViewOERequestById(int id, string username1)
         {
             ClassConfig classConfig = new ClassConfig();
             List<TblCgyoeModel> listOfOERequest = new List<TblCgyoeModel>();
-            string username = configclass.username();
+            //string username = configclass.username();
+            string username = username1;
             string config = configclass.MorSQLConnections();
             using (SqlConnection connection = new SqlConnection(config))
             {
@@ -114,13 +116,14 @@ namespace OEWebApplicationApp.Models
 
 
         /*UPDATE===========================================================================================================================*/
-        public bool UpdateRequest(int id, TblCgyoeModel request)
+        public bool UpdateRequest(int id, TblCgyoeModel request, string username1)
         {
             ClassConfig configclass = new();
             int i = 0;
             ClassConfig classConfig = new ClassConfig();
             List<TblCgyoeModel> listOfOERequest = new List<TblCgyoeModel>();
-            string username = configclass.username();
+            //string username = configclass.username();
+            string username = username1;
             string config = configclass.MorSQLConnections();
             using (SqlConnection connection = new SqlConnection(config))
             {
@@ -148,9 +151,10 @@ namespace OEWebApplicationApp.Models
         }//UpdateRequest
 
         /*DELETE===========================================================================================================================*/
-        public string Delete(int id)
+        public string Delete(int id, string username1)
         {
-            string username = configclass.username();
+            //string username = configclass.username();
+            string username = username1;
             string config = configclass.MorSQLConnection();
             string ? result = "";
             using (SqlConnection connection = new SqlConnection(config))
@@ -170,9 +174,10 @@ namespace OEWebApplicationApp.Models
         }//delete
 
         /*INSERT===========================================================================================================================*/
-        public bool createProduct(TblCgyoeModel request)
+        public bool createProduct(TblCgyoeModel request, string username1)
         {
-            string username = configclass.username();
+            //string username = configclass.username();
+            string username = username1;
             string config = configclass.MorSQLConnections();
             int i = 0;
             using (SqlConnection connection = new SqlConnection(config))
@@ -257,11 +262,12 @@ namespace OEWebApplicationApp.Models
         //APPROVAL SECTION=======================================================================================================================
         /*GET APPROVAL REQUEST=================================================================================================================*/
         //GET THE LIST BASED ON THE APPROVED BY AND STATUS
-        public List<TblCgyoeModel> GetViewApproverOERequest(string id)
+        public List<TblCgyoeModel> GetViewApproverOERequest(string id, string username1)
         {
             ClassConfig classConfig = new ClassConfig();
             List<TblCgyoeModel> listOfOERequest = new List<TblCgyoeModel>();
-            string username = configclass.username();
+            //string username = configclass.username();
+            string username = username1;
             if (id == null) { id = "All"; };
             string config = configclass.MorSQLConnections();
             using (SqlConnection connection = new SqlConnection(config))
@@ -308,11 +314,12 @@ namespace OEWebApplicationApp.Models
         }//GetViewApproverOERequest
 
         /*GET REQUEST BY ID===========================================================================================================================*/
-        public List<TblCgyoeModel> GetViewOEById(int id)
+        public List<TblCgyoeModel> GetViewOEById(int id, string username1)
         {
             ClassConfig classConfig = new ClassConfig();
             List<TblCgyoeModel> listOfOERequest = new List<TblCgyoeModel>();
-            string username = configclass.username();
+            //string username = configclass.username();
+            string username = username1;
             string config = configclass.MorSQLConnections();
             using (SqlConnection connection = new SqlConnection(config))
             {
@@ -359,13 +366,14 @@ namespace OEWebApplicationApp.Models
 
         /*APPROVE===========================================================================================================================*/
         //GET APPROVE REQUEST BY ID ONLY EDITABLE ACTION WILL BE THE REQUEST REASON AND STATUS==============================================
-        public bool ApproveRequest(int id, TblCgyoeModel request)
+        public bool ApproveRequest(int id, TblCgyoeModel request, string username1)
         {
             ClassConfig configclass = new();
             int i = 0;
             ClassConfig classConfig = new ClassConfig();
             List<TblCgyoeModel> listOfOERequest = new List<TblCgyoeModel>();
-            string username = configclass.username();
+            //string username = configclass.username();
+            string username = username1;
             string config = configclass.MorSQLConnections();
             using (SqlConnection connection = new SqlConnection(config))
             {
@@ -394,13 +402,14 @@ namespace OEWebApplicationApp.Models
 
         /*Auto APPROVE======================================================================================================================*/
         //GET APPROVE REQUEST BY ID ONLY EDITABLE ACTION WILL BE THE REQUEST REASON AND STATUS==============================================
-        public bool AutoApproveRequest(int id)
+        public bool AutoApproveRequest(int id, string username1)
         {
             ClassConfig configclass = new();
             int i = 0;
             ClassConfig classConfig = new ClassConfig();
             List<TblCgyoeModel> listOfOERequest = new List<TblCgyoeModel>();
-            string username = configclass.username();
+            //string username = configclass.username();
+            string username = username1;
             string config = configclass.MorSQLConnections();
             var approvedStatus = "Approved";
             var autoApproved = true;
@@ -428,9 +437,10 @@ namespace OEWebApplicationApp.Models
             }//using
         }//ApproveRequest
 
-        public string GetLastEntryByUser()
+        public string GetLastEntryByUser(string username1)
         {
-            string username = configclass.username();
+            //string username = configclass.username();
+            string username = username1;
             string config = configclass.MorSQLConnection();
             string ? result = "";
             using (SqlConnection connection = new SqlConnection(config))

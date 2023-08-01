@@ -11,10 +11,11 @@ namespace OEWebApplicationApp
 
         //GET ALL VENDORS ======================================================================
         //GET VENDORS FROM VMORT TABLE
-        public List<VendorModel> GetViewVendor()
+        public List<VendorModel> GetViewVendor(string username1)
         {
             List<VendorModel> listOfVendors = new List<VendorModel>();
-            string username = configclass.username();
+            //string username = configclass.username();
+            string username = username1;
             string config = configclass.vMortlSQLConnections();
             using (SqlConnection connection = new SqlConnection(config))
             {
