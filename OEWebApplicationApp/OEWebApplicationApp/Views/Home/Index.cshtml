@@ -36,7 +36,7 @@
             }
             else if (@ViewBag.ApproverBool == true && @ViewBag.RequesterBool == false)
             {
-                <a class="m-4 p-2 text-center" asp-area="" asp-controller="Approval" asp-action="Index"><h5>Operating Expense Approver</h5></a>
+                <a class="m-4 p-2 text-center" asp-area="" asp-controller="Approval" asp-action="Index" asp-route-id="notApproved"><h5>Operating Expense Approver</h5></a>
 @*                <h5 class="" id="">Requester:  @ViewBag.ApproverBool</h5>*@
             }
             else if (@ViewBag.RequesterBool == true && @ViewBag.ApproverBool == false)
