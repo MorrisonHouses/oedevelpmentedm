@@ -10,8 +10,10 @@ namespace OEWebApplicationApp.Controllers
             string value;
             value = HttpContext.User.Identity.Name.Remove(0, 14);
             //value = "cpitre";
+            //value = "dwyton";
+            //value = "sladd";
 
-            return value;
+            return value.ToLower();
         }
         public IActionResult Index()
         {

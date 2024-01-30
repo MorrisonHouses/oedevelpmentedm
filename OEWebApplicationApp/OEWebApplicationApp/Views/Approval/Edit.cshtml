@@ -8,92 +8,92 @@
     <div class="row">
         <div class="col-sm-4"><h3>Approve Operating Expense @Model.RequestId</h3></div>
         <a asp-area="" asp-controller="Approval" asp-action="Index" asp-route-id="notApproved"><h4>Back to Approve List</h4></a>
-        <div class="col-sm-4"></div>   
+        <div class="col-sm-4"></div>
         <div class="col-sm-4">
             <p>
-                
+
             </p>
         </div>
     </div>
 </div>
 <hr />
 <div class="container-fluid ">
-<div class="row">
-    <div class="col-md-3"></div>
+    <div class="row">
+        <div class="col-md-3"></div>
         <div class="col-md-6 boxShadow">
             <form asp-action="Edit" asp-antiforgery="true">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="RequestId" />
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="RequestId" />
                 <div class=" m-2">
                     <div class="form-group-approve ">
                         <label asp-for="Vendor" class="control-label"></label>
-                        <input asp-for="Vendor" class="form-control" readonly/>
+                        <input asp-for="Vendor" class="form-control" readonly />
                         <span asp-validation-for="Vendor" class="text-danger"></span>
                     </div>
                     <div class="form-group-approve">
                         <label asp-for="VendorName" class="control-label"></label>
-                            <input asp-for="VendorName" class="form-control" readonly />
+                        <input asp-for="VendorName" class="form-control" readonly />
                         <span asp-validation-for="VendorName" class="text-danger"></span>
                     </div>
-                    </div>
+                </div>
                 <div class=" m-2">
                     <div class="form-group-approve">
                         <label asp-for="RequestedBy" class="control-label"></label>
-                            <input asp-for="RequestedBy" class="form-control" readonly />
+                        <input asp-for="RequestedBy" class="form-control" readonly />
                         <span asp-validation-for="RequestedBy" class="text-danger"></span>
                     </div>
                     <div class="form-group-approve">
                         <label asp-for="Glaccount" class="control-label"></label>
-                            <input asp-for="Glaccount" class="form-control" readonly />
+                        <input asp-for="Glaccount" class="form-control" readonly />
                         <span asp-validation-for="Glaccount" class="text-danger"></span>
                     </div>
                 </div>
-@*            <div class="form-group">
+                @*            <div class="form-group">
                 <label asp-for="AutoApproveThreshold" class="control-label"></label>
-                    <input asp-for="AutoApproveThreshold" class="form-control" readonly />
+                <input asp-for="AutoApproveThreshold" class="form-control" readonly />
                 <span asp-validation-for="AutoApproveThreshold" class="text-danger"></span>
-            </div>*@
+                </div>*@
                 <div class=" m-2">
                     <div class="form-group-approve">
                         <label asp-for="Amount" class="control-label"></label>
-                            <input asp-for="Amount" class="form-control" readonly />
+                        <input asp-for="Amount" class="form-control" readonly />
                         <span asp-validation-for="Amount" class="text-danger"></span>
                     </div>
-        @*            <div class="form-group">
-                        <label asp-for="Gstvalue" class="control-label"></label>
-                            <input asp-for="Gstvalue" class="form-control" readonly />
-                        <span asp-validation-for="Gstvalue" class="text-danger"></span>
+                    @*            <div class="form-group">
+                    <label asp-for="Gstvalue" class="control-label"></label>
+                    <input asp-for="Gstvalue" class="form-control" readonly />
+                    <span asp-validation-for="Gstvalue" class="text-danger"></span>
                     </div>*@
                     <div class="form-group-approve">
                         <label asp-for="Gstamount" class="control-label"></label>
-                            <input asp-for="Gstamount" class="form-control" readonly />
+                        <input asp-for="Gstamount" class="form-control" readonly />
                         <span asp-validation-for="Gstamount" class="text-danger"></span>
                     </div>
                 </div>
                 <div class=" m-2">
                     <div class="form-group-approve">
                         <label asp-for="TotalAmount" class="control-label"></label>
-                            <input asp-for="TotalAmount" class="form-control" readonly />
+                        <input asp-for="TotalAmount" class="form-control" readonly />
                         <span asp-validation-for="TotalAmount" class="text-danger"></span>
                     </div>
-                        <div class="form-group-approve">
+                    <div class="form-group-approve">
                         <label asp-for="Gstincluded" class="control-label"></label>
-                            <input asp-for="Gstincluded" class="form-control" readonly />
+                        <input asp-for="Gstincluded" class="form-control" readonly />
                         <span asp-validation-for="Gstincluded" class="text-danger"></span>
                     </div>
                 </div>
-@*            <div class="form-group">
+                @*            <div class="form-group">
                 <label asp-for="Budgeted" class="control-label"></label>
-                    <input asp-for="Budgeted" class="form-control" readonly />
+                <input asp-for="Budgeted" class="form-control" readonly />
                 <span asp-validation-for="Budgeted" class="text-danger"></span>
-            </div>*@
-@*            <div class="form-group">
+                </div>*@
+                @*            <div class="form-group">
                 <label asp-for="AutoApproved" class="control-label"></label>
-                    <input asp-for="AutoApproved" class="form-control" readonly />
+                <input asp-for="AutoApproved" class="form-control" readonly />
                 <span asp-validation-for="AutoApproved" class="text-danger"></span>
-            </div>*@
+                </div>*@
                 <div class="form-group  m-2">
-                    <label asp-for="Request" class="control-label" ></label>
+                    <label asp-for="Request" class="control-label"></label>
                     <input asp-for="Request" class="form-control " readonly />
                     <span asp-validation-for="Request" class="text-danger"></span>
                 </div>
@@ -104,44 +104,44 @@
                 </div>
                 <div class=" m-2">
                     <div class="form-group-approve">
-                    <label asp-for="PurchaseDate" class="control-label"></label>
+                        <label asp-for="PurchaseDate" class="control-label"></label>
                         <input asp-for="PurchaseDate" class="form-control" readonly />
-                    <span asp-validation-for="PurchaseDate" class="text-danger"></span>
+                        <span asp-validation-for="PurchaseDate" class="text-danger"></span>
                     </div>
-                        <div class="form-group-approve">
+                    <div class="form-group-approve">
                         <label asp-for="ApprovedBy" class="control-label"></label>
-                            <input asp-for="ApprovedBy" class="form-control" readonly />
+                        <input asp-for="ApprovedBy" class="form-control" readonly />
                         <span asp-validation-for="ApprovedBy" class="text-danger"></span>
                     </div>
                 </div>
-@*            <div class="form-group">
+                @*            <div class="form-group">
                 <label asp-for="ApprovedDate" class="control-label"></label>
                 <input asp-for="ApprovedDate" class="form-control" />
                 <span asp-validation-for="ApprovedDate" class="text-danger"></span>
-            </div>*@
-@*            <div class="form-group">
+                </div>*@
+                @*            <div class="form-group">
                 <label asp-for="Status" class="control-label"></label>
                 <select asp-for="Status" asp-items=@ViewBag.status class="form-control"></select>
                 <span asp-validation-for="Status" class="text-danger"></span>
-            </div>*@
+                </div>*@
                 <div class=" m-2">
                     <div class="form-group-approve">
                         <label asp-for="Status" class="control-label" hidden></label>
-                        <input asp-for="Status" value="Approved" class="form-control text-danger" hidden/>
+                        <input asp-for="Status" value="Approved" class="form-control text-danger" hidden />
                         <span asp-validation-for="Status" class="text-danger"></span>
                     </div>
                 </div>
-@*            <div class="form-group">
+                @*            <div class="form-group">
                 <label asp-for="Timestamp" class="control-label"></label>
                 <input asp-for="Timestamp" class="form-control" />
                 <span asp-validation-for="Timestamp" class="text-danger"></span>
-            </div>*@
+                </div>*@
                 <div class="form-group  m-2">
                     <input asp-controller="Approval" type="submit" value="Approve" class="btn btn-primary m-2" />
-                    <a asp-controller="Approval" asp-action="Reject" asp-route-id="@Model.RequestId" asp-route-requestedby="@Model.RequestedBy" class="text-danger fw-bold ">REJECT</a>
+                    <a asp-controller="Approval" asp-action="Reject" asp-route-id="@Model.RequestId" asp-route-requestedby="@Model.RequestedBy" class="text-danger fw-bold">REJECT</a>
                 </div>
-        </form>
-    </div>
+            </form>
+        </div>
     </div>
     <div class="col-md-3"></div>
 </div>

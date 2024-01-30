@@ -14,18 +14,18 @@ namespace OEWebApplicationApp
         {
             ClassConfig classConfig = new ClassConfig();
             //int count = GetAllGlAccounts().Where(x => x.GateKeeper.Trim() == classConfig.username().Trim()).Count();
-            int count = GetAllGlAccounts(username1).Where(x => x.GateKeeper.Trim() == username1.Trim()).Count();
+            int count = GetAllGlAccounts(username1).Where(x => x.GateKeeper.ToLower().Trim() == username1.Trim()).Count();
             bool check = false;
             if (count > 0) { check = true; } else { check = false; };
             return check;
         }//GetRequestBool
 
         // checks if the person loggin in is an approver based on the ApprovalGateKeeper field=================================================
-        public Boolean GetApprovalBool(string username1)
+        public Boolean GetApprovalBool(string username)
         {
             ClassConfig classConfig = new ClassConfig();
             //int count = GetAllGlAccounts().Where(x => x.ApprovalGateKeeper.Trim() == classConfig.username().Trim()).Count();
-            int count = GetAllGlAccounts(username1).Where(x => x.ApprovalGateKeeper.Trim() == username1.Trim()).Count();
+            int count = GetAllGlAccounts(username).Where(x => x.ApprovalGateKeeper.ToLower().Trim() == username).Count();
             bool check = false;
             if (count > 0) { check = true; } else { check = false; };
             return check;
@@ -44,7 +44,7 @@ namespace OEWebApplicationApp
                 SqlCommand command = connection.CreateCommand();
                 command.CommandType = CommandType.StoredProcedure;
                 command.CommandText = "spr_GLM_Accounts_User";
-                command.Parameters.AddWithValue("@windowsUser", username);
+                command.Parameters.AddWithValue("@windowsUser", username1);
                 SqlDataAdapter sqlda = new SqlDataAdapter(command);
                 DataTable dtOE = new DataTable();
                 connection.Open();

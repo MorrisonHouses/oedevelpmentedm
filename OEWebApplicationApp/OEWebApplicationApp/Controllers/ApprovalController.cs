@@ -12,9 +12,10 @@ namespace OEWebApplicationApp.Controllers
         {
             string value;
             value = HttpContext.User.Identity.Name.Remove(0, 14);
-            //value = "cpitre";
+            //value = "dwyton";
+            //value = "edoucett";
 
-            return value;
+            return value.ToLower();
         }
         //instace of helper classes======================================================
         private ManagerTblCgyoe tblCgyoeManager = new();
@@ -27,7 +28,7 @@ namespace OEWebApplicationApp.Controllers
             ClassFunctions function = new();
             ClassConfig configclass = new();
             //ViewBag.UserName = configclass.username();
-            ViewBag.UserName = NewUserName();
+            ViewBag.UserName = NewUserName().ToLower();
             ViewBag.DateTime = function.dateTime();
             try
             {

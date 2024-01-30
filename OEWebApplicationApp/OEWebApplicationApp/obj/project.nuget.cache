@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LoDWQq44k5h7/nWWDTTERvHcOimaCAqPYSLH8ixCMNrTw9Bcq/rkw9kLQyaJYq6u6JW9kSl598lJ3YMbKWMX9A==",
+  "dgSpecHash": "ShXqfNRERl2AjsAXfTXaDr73tI5Lym9tjrnloFj7C5inCoaa53obaUmkvxETvE9WMLkyTFhZ5Ra22MiWKLDp1g==",
   "success": true,
-  "projectFilePath": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelpmentedm\\OEWebApplicationApp\\OEWebApplicationApp\\OEWebEDMApplicationApp.csproj",
+  "projectFilePath": "C:\\inetpub\\wwwroot\\oedevelopmentedm\\OEWebApplicationApp\\OEWebEDMApplicationApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\edoucett\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\edoucett\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
@@ -77,7 +77,7 @@
     "C:\\Users\\edoucett\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.1\\microsoft.data.sqlclient.5.1.1.nupkg.sha512",
     "C:\\Users\\edoucett\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.1.0\\microsoft.data.sqlclient.sni.runtime.5.1.0.nupkg.sha512",
     "C:\\Users\\edoucett\\.nuget\\packages\\microsoft.diasymreader\\1.3.0\\microsoft.diasymreader.1.3.0.nupkg.sha512",
-    "C:\\Users\\edoucett\\.nuget\\packages\\microsoft.dotnet.scaffolding.shared\\6.0.14\\microsoft.dotnet.scaffolding.shared.6.0.14.nupkg.sha512",
+    "C:\\Users\\edoucett\\.nuget\\packages\\microsoft.dotnet.scaffolding.shared\\6.0.16\\microsoft.dotnet.scaffolding.shared.6.0.16.nupkg.sha512",
     "C:\\Users\\edoucett\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.5\\microsoft.entityframeworkcore.7.0.5.nupkg.sha512",
     "C:\\Users\\edoucett\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.5\\microsoft.entityframeworkcore.abstractions.7.0.5.nupkg.sha512",
     "C:\\Users\\edoucett\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.5\\microsoft.entityframeworkcore.analyzers.7.0.5.nupkg.sha512",
@@ -108,13 +108,13 @@
     "C:\\Users\\edoucett\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\edoucett\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\edoucett\\.nuget\\packages\\microsoft.visualstudio.debugger.contracts\\17.2.0\\microsoft.visualstudio.debugger.contracts.17.2.0.nupkg.sha512",
-    "C:\\Users\\edoucett\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\6.0.14\\microsoft.visualstudio.web.codegeneration.6.0.14.nupkg.sha512",
-    "C:\\Users\\edoucett\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\6.0.14\\microsoft.visualstudio.web.codegeneration.core.6.0.14.nupkg.sha512",
-    "C:\\Users\\edoucett\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.design\\6.0.14\\microsoft.visualstudio.web.codegeneration.design.6.0.14.nupkg.sha512",
-    "C:\\Users\\edoucett\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.entityframeworkcore\\6.0.14\\microsoft.visualstudio.web.codegeneration.entityframeworkcore.6.0.14.nupkg.sha512",
-    "C:\\Users\\edoucett\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.templating\\6.0.14\\microsoft.visualstudio.web.codegeneration.templating.6.0.14.nupkg.sha512",
-    "C:\\Users\\edoucett\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.utils\\6.0.14\\microsoft.visualstudio.web.codegeneration.utils.6.0.14.nupkg.sha512",
-    "C:\\Users\\edoucett\\.nuget\\packages\\microsoft.visualstudio.web.codegenerators.mvc\\6.0.14\\microsoft.visualstudio.web.codegenerators.mvc.6.0.14.nupkg.sha512",
+    "C:\\Users\\edoucett\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\6.0.16\\microsoft.visualstudio.web.codegeneration.6.0.16.nupkg.sha512",
+    "C:\\Users\\edoucett\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\6.0.16\\microsoft.visualstudio.web.codegeneration.core.6.0.16.nupkg.sha512",
+    "C:\\Users\\edoucett\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.design\\6.0.16\\microsoft.visualstudio.web.codegeneration.design.6.0.16.nupkg.sha512",
+    "C:\\Users\\edoucett\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.entityframeworkcore\\6.0.16\\microsoft.visualstudio.web.codegeneration.entityframeworkcore.6.0.16.nupkg.sha512",
+    "C:\\Users\\edoucett\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.templating\\6.0.16\\microsoft.visualstudio.web.codegeneration.templating.6.0.16.nupkg.sha512",
+    "C:\\Users\\edoucett\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.utils\\6.0.16\\microsoft.visualstudio.web.codegeneration.utils.6.0.16.nupkg.sha512",
+    "C:\\Users\\edoucett\\.nuget\\packages\\microsoft.visualstudio.web.codegenerators.mvc\\6.0.16\\microsoft.visualstudio.web.codegenerators.mvc.6.0.16.nupkg.sha512",
     "C:\\Users\\edoucett\\.nuget\\packages\\microsoft.web.administration\\11.1.0\\microsoft.web.administration.11.1.0.nupkg.sha512",
     "C:\\Users\\edoucett\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\edoucett\\.nuget\\packages\\microsoft.win32.registry\\4.0.0\\microsoft.win32.registry.4.0.0.nupkg.sha512",
@@ -122,15 +122,15 @@
     "C:\\Users\\edoucett\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\edoucett\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\edoucett\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
-    "C:\\Users\\edoucett\\.nuget\\packages\\nuget.common\\6.3.1\\nuget.common.6.3.1.nupkg.sha512",
-    "C:\\Users\\edoucett\\.nuget\\packages\\nuget.configuration\\6.3.1\\nuget.configuration.6.3.1.nupkg.sha512",
-    "C:\\Users\\edoucett\\.nuget\\packages\\nuget.dependencyresolver.core\\6.3.1\\nuget.dependencyresolver.core.6.3.1.nupkg.sha512",
-    "C:\\Users\\edoucett\\.nuget\\packages\\nuget.frameworks\\6.3.1\\nuget.frameworks.6.3.1.nupkg.sha512",
-    "C:\\Users\\edoucett\\.nuget\\packages\\nuget.librarymodel\\6.3.1\\nuget.librarymodel.6.3.1.nupkg.sha512",
-    "C:\\Users\\edoucett\\.nuget\\packages\\nuget.packaging\\6.3.1\\nuget.packaging.6.3.1.nupkg.sha512",
-    "C:\\Users\\edoucett\\.nuget\\packages\\nuget.projectmodel\\6.3.1\\nuget.projectmodel.6.3.1.nupkg.sha512",
-    "C:\\Users\\edoucett\\.nuget\\packages\\nuget.protocol\\6.3.1\\nuget.protocol.6.3.1.nupkg.sha512",
-    "C:\\Users\\edoucett\\.nuget\\packages\\nuget.versioning\\6.3.1\\nuget.versioning.6.3.1.nupkg.sha512",
+    "C:\\Users\\edoucett\\.nuget\\packages\\nuget.common\\6.6.1\\nuget.common.6.6.1.nupkg.sha512",
+    "C:\\Users\\edoucett\\.nuget\\packages\\nuget.configuration\\6.6.1\\nuget.configuration.6.6.1.nupkg.sha512",
+    "C:\\Users\\edoucett\\.nuget\\packages\\nuget.dependencyresolver.core\\6.6.1\\nuget.dependencyresolver.core.6.6.1.nupkg.sha512",
+    "C:\\Users\\edoucett\\.nuget\\packages\\nuget.frameworks\\6.6.1\\nuget.frameworks.6.6.1.nupkg.sha512",
+    "C:\\Users\\edoucett\\.nuget\\packages\\nuget.librarymodel\\6.6.1\\nuget.librarymodel.6.6.1.nupkg.sha512",
+    "C:\\Users\\edoucett\\.nuget\\packages\\nuget.packaging\\6.6.1\\nuget.packaging.6.6.1.nupkg.sha512",
+    "C:\\Users\\edoucett\\.nuget\\packages\\nuget.projectmodel\\6.6.1\\nuget.projectmodel.6.6.1.nupkg.sha512",
+    "C:\\Users\\edoucett\\.nuget\\packages\\nuget.protocol\\6.6.1\\nuget.protocol.6.6.1.nupkg.sha512",
+    "C:\\Users\\edoucett\\.nuget\\packages\\nuget.versioning\\6.6.1\\nuget.versioning.6.6.1.nupkg.sha512",
     "C:\\Users\\edoucett\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\edoucett\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\edoucett\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
@@ -232,5 +232,16 @@
     "C:\\Users\\edoucett\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\edoucett\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Data.SqlClient' 5.1.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-98g6-xh36-x2p7",
+      "libraryId": "Microsoft.Data.SqlClient",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

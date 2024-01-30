@@ -1,0 +1,119 @@
+﻿@model IEnumerable<OEWebApplicationApp.Models.TblCgyoeModel>
+
+@{
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+    ViewData["Title"] = "Details";
+}
+<div class="">
+    <div class="container-fluid">
+        <div class="row">
+            <a asp-area="" asp-controller="Request" asp-action="Index" class="print-job"><h4>Back to Requests</h4></a>
+            <button class="col-3 m-3 btn-primary print-job" onclick="printscreen()">Print OE</button>
+            <div class="col-4"></div>
+            <div class="col-4 justify-content-end"> </div>
+        </div>
+    </div>
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-6"><img class="d-inline-block align-text-top bg-white m-1 p-2 img-thumbnail" src="~/Images/MH_Logo_BLACK.png" width="300" height="75"></img></div>
+            <div class="col-6 bg-white">
+                @foreach (var item in Model)
+                {
+                    <div class="text-center text-back fw-bold">Purchase Order</div>
+                    <div class="text-center border">Request Date: @Html.DisplayNameFor(model => model.RequestId)@Html.DisplayFor(modelItem => item.RequestId)</div>
+                    <div class="text-center">Purchase Date: @Html.DisplayFor(modelItem => item.PurchaseDate)</div>
+                    <div class="text-center">GL-Account: @Html.DisplayFor(modelItem => item.Glaccount)</div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid m-2">
+        <div class="row">
+            <div class="col-6 border bg-white p-2">
+                <div class="fw-bold">Vendor</div>
+                @foreach (var item in Model)
+                {
+                    <div class="fw-bold">@Html.DisplayFor(modelItem => item.Vendor)</div>
+                    <div>@Html.DisplayFor(modelItem => item.VendorName)</div>
+                    <br />
+                    <br />
+                    <br />
+                }
+            </div>
+            <div class="col-6 border bg-whitev p-2">
+                <div class="fw-bold">Ships To:</div>
+                <div class="fw-bold">Morrison Homes - EDMONTON</div>
+                <div class="fw-bold">3552 78 Ave NW</div>
+                <div class="fw-bold">Edmonton, AB, T6B 2X9</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-12 border bg-white align-items-center m-2">
+                <div class="fw-bold text-danger text-center">PLEASE ATTACH A COPY OF THIS PURCHASE ORDER TO THE INVOICE</div>
+                <div class="fw-bold text-danger text-center">PURCHASE ORDER NUMBER MUST APPEAR ON ALL INVOICES</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-12 bg-white ">
+                <div class="fw-bold">Please supply the following:</div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-6 bg-white fw-bold">
+                @foreach (var item in Model)
+                {
+                    <div>Description: @Html.DisplayFor(modelItem => item.Reason)</div>
+                    @Html.DisplayFor(modelItem => item.Request)
+                }
+            </div>
+            <div class="col-6 bg-white">
+            </div>
+        </div>
+        <br />
+    </div>
+    <div class="container-fluid justify-content-end">
+        <div class="row">
+            <div class="col-8 bg-white fw-bold"></div>
+            <div class="col-4 bg-white">
+                @foreach (var item in Model)
+                {
+                    <div class="">Sub-Total: @Html.DisplayFor(modelItem => item.Amount)</div>
+                    <div class="">GST: @Html.DisplayFor(modelItem => item.Gstamount)</div>
+                    <div class="fw-bold">Total: @Html.DisplayFor(modelItem => item.TotalAmount)</div>
+                }
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <br />
+    <br />
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-12 bg-white">
+                @foreach (var item in Model)
+                {
+                    <div class="text-center">Requested By: @Html.DisplayFor(modelItem => item.RequestedBy) / Approved By: @Html.DisplayFor(modelItem => item.ApprovedBy) / Approved Date: @Html.DisplayFor(modelItem => item.ApprovedDate) </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function printscreen() {
+        window.print();
+    }
+</script>

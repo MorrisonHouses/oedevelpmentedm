@@ -199,7 +199,7 @@
                         {
                             <a asp-controller="Request" asp-action="Details" asp-route-id="@item.RequestId" class="text-black">Details</a>
                             <a asp-controller="Image" asp-action="Index" asp-route-id="@item.RequestId" asp-route-page="request" class="text-black fw-bold">Attachments</a>
-                            <a asp-controller="Request" asp-action="Print"
+                            @* <a asp-controller="Request" asp-action="Print"
                                asp-route-page="request"
                                asp-route-Requestid="@item.RequestId"
                                asp-route-vendor="@item.Vendor"
@@ -210,7 +210,8 @@
                                asp-route-taxAmt="@item.Gstamount"
                                asp-route-totalAmt="@item.TotalAmount"
                                asp-route-vendorName="@item.VendorName"
-                               class="text-black ">Print</a>
+                               class="text-black ">Print</a> *@
+                            <a asp-controller="Request" asp-action="Print2" asp-route-id="@item.RequestId" class="text-black">Print</a>
                         }
                     </td>
                     @ViewBag.ImageCount

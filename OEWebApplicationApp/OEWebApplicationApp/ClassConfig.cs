@@ -38,7 +38,7 @@ namespace OEWebApplicationApp
         /// <returns>user address</returns>
         public string Address()
         {
-            string Address = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
+            string Address = System.Security.Principal.WindowsIdentity.GetCurrent().Name.ToLower();
             return Address;
         }//Address
         /*=======================================================================================================================================*/

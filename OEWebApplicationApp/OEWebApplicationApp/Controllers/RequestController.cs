@@ -11,8 +11,10 @@ namespace OEWebApplicationApp.Controllers
             string value;
             value = HttpContext.User.Identity.Name.Remove(0, 14);
             //value = "cpitre";
+            //value = "edoucett";
+            //value = "sladd";
 
-            return value;
+            return value.ToLower();
         }
         //instace of helper classes======================================================
         private ClassFunctions function = new();
@@ -78,6 +80,26 @@ namespace OEWebApplicationApp.Controllers
             //return View(OElist);
         }
 
+        public ActionResult Print2(int id)
+        {
+            ClassFunctions function = new();
+            ClassConfig configclass = new();
+            //ViewBag.UserName = configclass.username();
+            ViewBag.UserName = NewUserName();
+            ViewBag.DateTime = function.dateTime();
+            try
+            {
+                var OElist = tblCgyoeManager.GetViewOERequestById(id, NewUserName());
+                return View(OElist);
+            }
+            catch (Exception ex)
+            {
+                TempData["Info Message"] = ex.Message;
+                return View();
+            }
+            //var OElist = tblCgyoeManager.GetViewOERequestById(id);
+            //return View(OElist);
+        }
 
         // Create: =====================================================================
         //[Route("CreateItem")]
@@ -342,9 +364,9 @@ namespace OEWebApplicationApp.Controllers
                         function.WriteToFile(requestId, vendor, reason, request, gst, totalAmount);
                         //message to user
                         TempData["Info Message"] = "--Message Center: Approval has been approved --";
-                        string lastEntry = tblCgyoeManager.GetLastEntryByUser(NewUserName());
-                        return RedirectToAction("Create", "Image", new { id = lastEntry, page = "request" });
-                        //return RedirectToAction("Index");
+                        //string lastEntry = tblCgyoeManager.GetLastEntryByUser(NewUserName());
+                        //return RedirectToAction("Create", "Image", new { id = lastEntry, page = "request" });
+                        return RedirectToAction("Index");
                     }
                     else
                     {

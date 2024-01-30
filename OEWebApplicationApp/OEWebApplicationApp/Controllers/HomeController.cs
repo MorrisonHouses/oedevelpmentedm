@@ -16,14 +16,15 @@ namespace OEWebApplicationApp.Controllers
         {
             string value;
             value = HttpContext.User.Identity.Name.Remove(0, 14);
-            //value = "cpitre";
+            //value = "dwyton";
+            //value = "edoucett";
 
-            return value;
+            return value.ToLower();
         }
         public IActionResult Index()
         {
             //string userName = HttpContext.User.Identity.Name;
-            string userName = NewUserName();
+            string userName = NewUserName().ToLower().Trim();
             //userName = userName.Remove(0, 14);
             /*calls username*/
             ManagerViewGLaccount viewGLaccountManager = new ManagerViewGLaccount();

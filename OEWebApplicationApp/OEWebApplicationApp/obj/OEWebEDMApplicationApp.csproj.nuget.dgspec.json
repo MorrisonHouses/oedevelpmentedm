@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelpmentedm\\OEWebApplicationApp\\OEWebApplicationApp\\OEWebEDMApplicationApp.csproj": {}
+    "C:\\inetpub\\wwwroot\\oedevelopmentedm\\OEWebApplicationApp\\OEWebEDMApplicationApp.csproj": {}
   },
   "projects": {
-    "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelpmentedm\\OEWebApplicationApp\\OEWebApplicationApp\\OEWebEDMApplicationApp.csproj": {
+    "C:\\inetpub\\wwwroot\\oedevelopmentedm\\OEWebApplicationApp\\OEWebEDMApplicationApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelpmentedm\\OEWebApplicationApp\\OEWebApplicationApp\\OEWebEDMApplicationApp.csproj",
+        "projectUniqueName": "C:\\inetpub\\wwwroot\\oedevelopmentedm\\OEWebApplicationApp\\OEWebEDMApplicationApp.csproj",
         "projectName": "OEWebEDMApplicationApp",
-        "projectPath": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelpmentedm\\OEWebApplicationApp\\OEWebApplicationApp\\OEWebEDMApplicationApp.csproj",
+        "projectPath": "C:\\inetpub\\wwwroot\\oedevelopmentedm\\OEWebApplicationApp\\OEWebEDMApplicationApp.csproj",
         "packagesPath": "C:\\Users\\edoucett\\.nuget\\packages\\",
-        "outputPath": "\\\\Morfsdc1\\Users\\edoucett\\GitHub\\oedevelpmentedm\\OEWebApplicationApp\\OEWebApplicationApp\\obj\\",
+        "outputPath": "C:\\inetpub\\wwwroot\\oedevelopmentedm\\OEWebApplicationApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -65,7 +64,7 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[6.0.14, )"
+              "version": "[6.0.16, )"
             },
             "Microsoft.Web.Administration": {
               "target": "Package",
@@ -95,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

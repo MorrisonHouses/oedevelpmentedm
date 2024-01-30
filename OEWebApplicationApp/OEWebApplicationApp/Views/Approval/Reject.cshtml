@@ -13,8 +13,8 @@
 </div>
 <hr />
 <div class="container-fluid ">
-<div class="row">
-    <div class="col-md-3"></div>
+    <div class="row">
+        <div class="col-md-3"></div>
         <div class="col-md-6 boxShadow">
             <form asp-action="Reject" asp-antiforgery="true">
                 <div class="form-group-approve ">
@@ -33,13 +33,13 @@
                     <span asp-validation-for="RejectReason" class="text-danger"></span>
                     <h5 class="text-danger">-- 150 characters, no special characters. --</h5>
                 </div>
-                <div class="form-group boxShadow m-2">
+                <div class="form-group  m-2">
                     <input asp-controller="Approval" type="submit" value="Submit" class="btn btn-primary m-2" />
-@*                    <a asp-controller="Approval" asp-action="Edit" 
-                    asp-route-id="@ViewData["Id"]" 
+                    @*                    <a asp-controller="Approval" asp-action="Edit"
+                    asp-route-id="@ViewData["Id"]"
                     asp-route-RequestedBy="@ViewData["RequestedBy"]"
                     class="text-black ">Back</a>*@
                 </div>
-        </form>
+            </form>
+        </div>
     </div>
-</div>
